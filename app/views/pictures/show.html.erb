@@ -1,5 +1,9 @@
 <% provide(@picture) %>
-<%= @picture.name %>
 
-<img src="https://photos.google.com/photo/AF1QipNXlAqfeogB2O9Zhwq7S8e2bsKiQEF_d0RfrfHk?hl=pl">
-<%= @picture.url %>
+<div class="media">
+  <%= image_tag @picture.url, class: "mr-3" %>
+  <div class="media-body">
+    <h5 class="mt-0"><%= @picture.name %></h5>
+    <%= @picture.url %>
+   </div>
+</div>
